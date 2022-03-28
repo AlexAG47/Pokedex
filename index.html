@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="funcionamiento.js"></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="img1" src="https://avatars.githubusercontent.com/u/99037757?s=200&v=4">
+            <p>Programa LaunchX</p>
+        </div>
+        <img class="img2" src="https://alanmorel.pythonanywhere.com/static/images/logo.png"></img>
+        <img class="img3" src="https://crisgon.github.io/pokedex/src/images/logo.png">
+    </header>
+
+    <div class="borde"></div>
+
+    <section class="pokedex"> 
+
+        <div class="generalPokemon">
+            <div class="cuadroPokemon">
+                <div class="marcoPokemon">
+                    <div class="pantallaPokemon">
+                        <div></div>
+                        <div class="medio">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/481px-Pokebola-pokeball-png-0.png" id="pokeImagen">
+                            <input type="text" id="inputPokemon" placeholder="Escribe aquí">
+                            <input onclick="fetchPokemon()" type="button" id="botonBuscar" value="Buscar">
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="generalBisagra">
+            <div class="elemento1Bisagra"></div>
+            <div class="elemento2Bisagra"></div>
+            <div class="elemento3Bisagra"></div>
+        </div>
+
+        <div class="generalSprites">
+
+            <div class="ladoIzqSprites">
+                <div class="contCubitos">
+                    <div class="cubito"></div>
+                    <div class="cubito"></div>
+                </div>
+                <div class="contCirculo">
+                    <div class="circulo"></div>
+                </div>
+            </div>
+
+            <div class="cuadroInformacion">
+                <div class="marcoInformacion">
+                    <div class="pantallaInformacion">
+                        <p id="tipoPokemon">Tipo de Pokemon: </p>
+                        <label>Estadisticas:</label><br>
+                        <div class="stats">
+                            <label id="hp">HP: </label>
+                            <label id="atk">ATK: </label>
+                            <label id="def">DEF: </label>
+                            <label id="atkesp">ATK-ESP: </label>
+                            <label id="defesp">DEF-ESP: </label>
+                            <label id="speed">SPEED: </label>
+                        </div>
+                        <label>Movimientos:</label>
+                        <textarea id="moviPokemon" readonly disabled cols="55"></textarea>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="ladoDerSprites">
+                <div class="cuadroBotones">
+                    <div class="marcoBotones">
+                        <div class="botonVertical"></div>
+                        <div class="botonHorizontal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

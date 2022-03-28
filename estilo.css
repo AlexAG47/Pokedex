@@ -1,0 +1,348 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+
+@font-face {
+    font-family: 'Super-Smash-TV-Regular';
+    src:url('./fonts/Super-Smash-TV-Regular.ttf.woff') format('woff'),
+        url('./fonts/Super-Smash-TV-Regular.ttf.svg#Super-Smash-TV-Regular') format('svg'),
+        url('./fonts/Super-Smash-TV-Regular.ttf.eot'),
+        url('./fonts/Super-Smash-TV-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Super-Smash-TV-Regular';
+}
+
+/*header*/
+
+header{
+    background-color: rgb(224, 33, 33);
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header div{
+    display: flex;
+    position: center;
+    align-items: center;
+}
+
+header div p{
+    color: white;
+    text-shadow: 0px 1px 5px yellow;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+    font-family: "Pokemon";
+}
+
+.img1{
+    width: 100%;
+    height: 100%;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 15px;
+}
+
+.img3{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 100px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    .img2{
+        margin-top: 10px;
+    
+    }
+
+}
+
+/*Borde*/
+
+.borde{
+    background-color: black;
+    width: 100%;
+    height: 2px;
+}
+
+/*Pokedex*/
+
+.pokedex{
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Parte 1*/
+
+.generalPokemon{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: right;
+}
+
+.cuadroPokemon{
+    background-color: #fe321a;
+    width: 600px;
+    height: 400px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcoPokemon{
+    background-color: #221e1d;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pantallaPokemon{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 450px;
+    height: 250px;
+    display: flex;
+}
+
+.medio{
+    width:250px;
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#pokeImagen{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+#inputPokemon{
+    width: 125px;
+    margin: 5px;
+}
+
+#botonBuscar{
+    width: 70px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/*Parte 2*/
+
+.generalBisagra{
+    background-color: #fe321a;
+    width: 800px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.elemento1Bisagra{
+    width: 30px;
+    height: 50px;
+    border-right: 1px solid black;
+}
+
+.elemento2Bisagra{
+    width: 40px;
+    height: 50px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+    right: 20%;
+}
+
+.elemento3Bisagra{
+    width: 40px;
+    height: 50px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    position: relative;
+    right: 1%;
+}
+
+/*Parte 3*/
+.generalSprites{
+    display: flex;
+    background-color: aqua;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 800px;
+    height: 400px;
+}
+
+.ladoIzqSprites{
+    width: 150px;
+    height: 400px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.contCubitos{
+    background-color: #fe321a;
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.cubito{
+    background-color: #1b7c34;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 35%;
+    height: 15%;
+    margin-top: 20%;
+    position: relative;
+    right: 5px;
+}
+
+.contCirculo{
+    background-color: #fe321a;
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo{
+    width: 65%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #1fa3fc;
+}
+
+.cuadroInformacion{
+    background-color: #fe321a;
+    width:600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.marcoInformacion{
+    background-color:#221e1d ;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.pantallaInformacion{
+    background-color: white;
+    width: 85%;
+    height: 85%;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.pantallaInformacion p,label,textarea{
+    margin-left: 10px;
+}
+
+.stats{
+    width: 400px;
+    height: 50px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ladoDerSprites{
+    background-color: #fe321a;
+    width: 50px;
+    height: 400px;
+}
+
+.cuadroBotones{
+    background-color: #fe321a;
+    width: 180px;
+    height: 250px;
+    position: relative;
+    top: 37.6%;
+    border-right: 1px solid black;
+     border-bottom: 1px solid black;
+    border-radius: 0px 150px 150px 0px;
+}
+
+.marcoBotones{
+    background-color: #221e1d;
+    width: 110px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 30%;
+    top: 10%;
+    border: 1px solid black;
+    border-radius: 0px 150px 150px 0px;
+}
+
+.botonVertical{
+    background-color: rgb(156, 144, 144);
+    width: 25px;
+    height: 70px;
+    position: absolute;
+    left: 42px;
+}
+
+.botonHorizontal{
+    background-color: rgb(156, 144, 144);
+    width: 70px;
+    height: 25px;
+}
